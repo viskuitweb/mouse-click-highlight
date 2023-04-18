@@ -1,10 +1,11 @@
 # mouse-click-highlight
 
-The idea is to highlight whenever a User clicks underneath the cursor on the page, no matter where the cursor is.
+Highlight on cursor position whenever a user clicks on the page.
 
-## Goal
+  ### Goal
 
-The goal was to make a basic shape appear in the same spot the cursor is placed when clicked.
+  The goal was to make a basic shape appear in the same spot the cursor is when clicked.
+  
 
 ## How it works
 
@@ -14,16 +15,16 @@ We can get the position of the cursor easily with the events of the click listen
 
 Then after some timeout the "div" is deleted. This "divs" need to have individual ids to do so.
 
-
 You can add it style and animations to make it look and feel better.
 
-## v2
 
-Started playing with the animations and make look smoother. I think it would work better with a modified pointer with a simple circle shape.
+  ## v2
 
-### Problems
+  Started playing with the animations and make it look smoother. I think it would work better with a modified pointer with a simple circle shape.
 
-If spammed, at some point it doesn't show the hightlights anymore. It gets back to normal after a short while
+    ### Problems
+
+    If spammed, at some point it doesn't show the hightlights anymore. It gets back to normal after a short while
 
 
 Any tips are welcome
