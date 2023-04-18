@@ -18,13 +18,13 @@ Then after some timeout the "div" is deleted. This "divs" need to have individua
 You can add it style and animations to make it look and feel better.
 
 
-  ## v2
+## v2
 
-  Started playing with the animations and make it look smoother. I think it would work better with a modified pointer with a simple circle shape.
+Started playing with the animations and make it look smoother. I think it would work better with a modified pointer with a simple circle shape.
 
-    ### Problems
+### Problems
 
-    If spammed, at some point it doesn't show the hightlights anymore. It gets back to normal after a short while
+If spammed, at some point it doesn't show the hightlights anymore. It gets back to normal after a short while
 
 
 Any tips are welcome
