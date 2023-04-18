@@ -2,9 +2,9 @@
 
 Highlight on cursor position whenever a user clicks on the page.
 
-  ### Goal
+### Goal
 
-  The goal was to make a basic shape appear in the same spot the cursor is when clicked.
+The goal was to make a basic shape appear in the same spot the cursor is when clicked.
   
 
 ## How it works
