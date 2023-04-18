@@ -18,3 +18,4 @@ Then after some timeout the "div" is deleted. This "divs" need to have individua
 You can add it style and animations to make it look and feel better.
 
 
+Any tips or recomendations are welcome :)
