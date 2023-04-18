@@ -9,14 +9,14 @@ window.addEventListener('click', (event) => {
     //constant circle number for removal
     const circleConstant = circleNumber;  
   
-    createCircle(xMousePos,yMousePos,randomColor(),randomSize());
+    createCircle(xMousePos,yMousePos,randomColor());
   
     deleteCircle(circleConstant);
 });
 
 
 //SECONDARY FUNCTIONS
-let createCircle = (x,y,color,size) => {
+let createCircle = (x,y,color) => {
     const circleCanvas = document.getElementById("main");   //div where we prepend de circles
     
     let circleDiv = document.createElement("div");
@@ -30,9 +30,9 @@ let createCircle = (x,y,color,size) => {
     circleDiv.style.top=`${y}px`;
 
     //style
-    circleDiv.style.backgroundColor=color;
-    circleDiv.style.width=size;
-    circleDiv.style.height=size;
+    circleDiv.style.border=`${color} 5px solid`;
+    circleDiv.style.width=0;
+    circleDiv.style.height=0;
 
     circleNumber++ //set circkleNumber for next circle individual id
 
@@ -42,36 +42,33 @@ let createCircle = (x,y,color,size) => {
 let deleteCircle = (idNumber) => {
     setTimeout(function(){
         document.getElementById(`new-circle-${idNumber}`).remove();
-    },1000)
+    },800)
 }
 
 let randomColor = () => {
-    const colorArr = ["#5feaa3","#f45b69", "#7bafff"];
-    const random = Math.trunc(Math.random() * 10); //random number w/o decimelas
+    const colorArr = ["#5feaa3","#f45b69", "#7bafff", "#FEE440"];
+    let random = Math.round((Math.random() * 10));
 
-    switch (random) {
-      case 0:
-      case 1:
-      case 2:
-      case 3:
-          return colorArr[0];
+    if (random===10) {random=9;}
+
+    switch(random) {
+        case 0:
+            case 1:
+            case 2:
+                return colorArr[0];
+        case 3:
+            case 4:
+            case 5:
+                return colorArr[1];
+        case 6:
+            case 7:
+                return colorArr[2];
+        case 8:
+            case 9:
+                return colorArr[3];
+    }
           
-      case 4:
-      case 5:
-      case 6:
-          return colorArr[1];
-          
-      case 7:
-      case 8:
-      case 9:
-          return colorArr[2];
           
     }
-}
 
-let randomSize = () => {
-    const sizeArr = ["10px","20px","40px", "60px", "80px"];
-    const random = Math.trunc((Math.random() * 10)/2); //divided by 2 to have 0-4 results
 
-    return sizeArr[random]
-}
